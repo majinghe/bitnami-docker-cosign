@@ -24,6 +24,6 @@ ENV APP_VERSION="1.8.0" \
     PATH="/opt/bitnami/cosign/bin:$PATH"
 
 WORKDIR /cosign-keys
-USER 1001
+# USER 1001
 ENTRYPOINT [ "cosign" ]
 CMD [ "--help" ]
